@@ -71,6 +71,10 @@ body div#list_tareas div.div_tarea p {
   margin: 0;
   padding: 5px 0;
 }
+body div#list_tareas div.div_tarea .tarea_completada {
+  color: gray;
+  text-decoration: line-through;
+}
 body div#list_tareas div.div_tarea button {
   padding: 7px 12px;
   background: red;

@@ -79,6 +79,11 @@ body {
                 padding: 5px 0;
             }
 
+            .tarea_completada {
+                color: gray;
+                text-decoration: line-through;
+            }
+
             button {
                 padding: 7px 12px;
                 background: red;

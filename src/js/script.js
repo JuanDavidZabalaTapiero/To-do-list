@@ -38,6 +38,10 @@ function agregarTarea() {
         list_tareas.removeChild(div_tarea);
     });
 
+    div_tarea.addEventListener('click', function () {
+        name_tarea.classList.toggle("tarea_completada");
+    })
+
     // DEJO EL INPUT LIMPIO
     input_tarea.value = '';
 }

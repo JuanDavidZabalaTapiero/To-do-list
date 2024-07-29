@@ -25,10 +25,10 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 15px;
+        padding: 25px;
         background: white;
         border-radius: 10px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     h1 {
@@ -37,10 +37,15 @@ body {
     }
 
     div.cont_add_tarea {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
         input#input_tarea {
             padding: 5px;
             border-radius: 5px;
             border: 1px solid gray;
+            width: 70%;
         }
 
         button#add_tarea {
@@ -57,8 +62,33 @@ body {
         }
     }
 
-    div.div_tarea {
-        display: flex;
-        border: 1px solid;
+    div#list_tareas {
+        width: 100%;
+
+        div.div_tarea {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                max-width: 80%;
+                overflow: hidden;
+                margin: 0;
+                padding: 5px 0;
+            }
+
+            button {
+                padding: 7px 12px;
+                background: red;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: rgb(215, 0, 0);
+            }
+        }
     }
 }

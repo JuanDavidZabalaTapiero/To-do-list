@@ -24,19 +24,25 @@ body div.cont_to_do_list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
   background: white;
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 body h1 {
   margin-bottom: 15px;
   font-size: 28px;
 }
+body div.cont_add_tarea {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 body div.cont_add_tarea input#input_tarea {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid gray;
+  width: 70%;
 }
 body div.cont_add_tarea button#add_tarea {
   padding: 6px 10px;
@@ -49,7 +55,28 @@ body div.cont_add_tarea button#add_tarea {
 body div.cont_add_tarea button#add_tarea:hover {
   background: green;
 }
-body div.div_tarea {
+body div#list_tareas {
+  width: 100%;
+}
+body div#list_tareas div.div_tarea {
+  margin-top: 15px;
   display: flex;
-  border: 1px solid;
+  justify-content: space-between;
+  align-items: center;
+}
+body div#list_tareas div.div_tarea p {
+  max-width: 80%;
+  overflow: hidden;
+  margin: 0;
+  padding: 5px 0;
+}
+body div#list_tareas div.div_tarea button {
+  padding: 7px 12px;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body div#list_tareas div.div_tarea button:hover {
+  background: rgb(215, 0, 0);
 }/*# sourceMappingURL=style.css.map */

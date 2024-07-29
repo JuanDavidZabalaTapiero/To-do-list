@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+body div.cont_to_do_list {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+body div.cont_add_tarea input#input_tarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+body div.cont_add_tarea button#add_tarea {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+body div.cont_add_tarea button#add_tarea:hover {
+  background: green;
+}
+body div.div_tarea {
+  display: flex;
+  border: 1px solid;
+}/*# sourceMappingURL=style.css.map */

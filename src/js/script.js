@@ -1,11 +1,13 @@
 
 var list_tareas = document.getElementById("list_tareas");
-
-// EVENTO AL ADD TAREA
 const add_tarea = document.getElementById("add_tarea");
+const input_tarea = document.getElementById("input_tarea");
 
-add_tarea.addEventListener('click', function () {
-    var input_tarea = document.getElementById("input_tarea");
+function agregarTarea() {
+    // VERIFICO SI TIENE ALGO ESCRITO
+    if (input_tarea.value === '') {
+        return; // No hacer nada si el campo está vacío
+    }
 
     var div_tarea = document.createElement("div");
     div_tarea.className = 'div_tarea';
@@ -38,4 +40,14 @@ add_tarea.addEventListener('click', function () {
 
     // DEJO EL INPUT LIMPIO
     input_tarea.value = '';
-})
+}
+
+// EVENTO AL ADD TAREA
+add_tarea.addEventListener('click', agregarTarea);
+
+// EVENTO AL PRESIONAR ENTER EN EL INPUT
+input_tarea.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        agregarTarea();
+    }
+});
